@@ -1,20 +1,39 @@
-;; initial window
-(setq initial-frame-alist
-      '(
-        (width . 160) ; character
-        (height . 50) ; lines
-        ))
-
-;; default/sebsequent window
-(setq default-frame-alist
-      '(
-        (width . 100) ; character
-        (height . 52) ; lines
-        ))
-
-(require 'package)
+;;; package --- summary:
 
 (package-initialize)
+(add-to-list 'package-archives
+             '("melpa-stable" . "http://stable.melpa.org/packages/") t)
+
+(setq package-list '(auto-complete
+                           flycheck
+                           go-autocomplete
+                           go-eldoc
+                           go-mode
+                           multiple-cursors
+                           org))
+
+(dolist (package package-list)
+  (unless (package-installed-p package)
+    (package-install package)))
+
+(load-theme 'leuven)
+
+;; initial window
+;;(setq initial-frame-alist
+;;      '(
+;;        (width . 160) ; character
+;;        (height . 50) ; lines
+;;        ))
+
+;; default/sebsequent window
+;;(setq default-frame-alist
+;;      '(
+;;        (width . 100) ; character
+;;        (height . 52) ; lines
+;;        ))
+
+;;(require 'package)
+;;(package-initialize)
 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-copy-env "GOPATH")
@@ -70,7 +89,6 @@
 (package-install 'flycheck)
 (global-flycheck-mode)
 
-(load-theme 'solarized t)
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

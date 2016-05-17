@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/jm/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -60,7 +60,7 @@ export LANG=ko_KR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='vim'
+   export EDITOR='emacs'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -80,6 +80,14 @@ export LANG=ko_KR.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
+
+alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias ec="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c"
+alias emacsclient="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
+alias vi=ec
+alias vim=ec
+alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
+
    export GOPATH=$HOME/goprojects
    export PATH=$PATH:$GOPATH/bin
    export LESS=-RM
