@@ -10,6 +10,7 @@
                            go-eldoc
                            go-mode
                            multiple-cursors
+                           osx-clipboard
                            org))
 
 (dolist (package package-list)
@@ -102,15 +103,18 @@
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(global-linum-mode t)
  '(indent-tabs-mode nil)
+ '(osx-clipboard-mode t)
  '(package-archives
    (quote
     (("melpa" . "https://melpa.org/packages/")
      ("gnu" . "http://elpa.gnu.org/packages/"))))
  '(recentf-mode t)
+ '(save-interprogram-paste-before-kill t)
  '(show-paren-mode t)
  '(standard-indent 4)
  '(tab-width 4)
- '(tool-bar-mode t))
+ '(tool-bar-mode t)
+ '(yank-pop-change-selection t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
