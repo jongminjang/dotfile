@@ -103,11 +103,16 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(blink-cursor-mode nil)
+ '(column-number-mode t)
  '(custom-safe-themes
    (quote
     ("8db4b03b9ae654d4a57804286eb3e332725c84d7cdab38463cb6b97d5762ad26" default)))
  '(global-linum-mode t)
  '(indent-tabs-mode nil)
+ '(nyan-animate-nyancat t)
+ '(nyan-bar-length 20)
+ '(nyan-mode t)
+ '(nyan-wavy-trail t)
  '(osx-clipboard-mode t)
  '(package-archives
    (quote
