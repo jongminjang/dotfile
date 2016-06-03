@@ -92,3 +92,5 @@ alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
    export PATH=$PATH:$GOPATH/bin
    export LESS=-RM
 export TERM=xterm-256color
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
