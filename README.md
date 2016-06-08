@@ -3,5 +3,8 @@
 ##iterm configuration
 Profile -> Colors -> Tango light
 
-##iterm2 theme
+##oh-my-zsh theme
 https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm/master/honukai.zsh-theme
+
+##emacs theme
+cyberpunk
