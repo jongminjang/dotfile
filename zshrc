@@ -60,7 +60,7 @@ export LANG=ko_KR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-   export EDITOR='emacs'
+export EDITOR='emacs'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -81,16 +81,14 @@ export LANG=ko_KR.UTF-8
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
-alias ec="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient -c"
-alias emacsclient="/Applications/Emacs.app/Contents/MacOS/bin/emacsclient"
-alias vi=ec
-alias vim=ec
-alias e="/Applications/Emacs.app/Contents/MacOS/Emacs"
+alias e='emacsclient -t'
+alias ec='emacsclient -c'
+alias vim='emacsclient -t'
+alias vi='emacsclient -t'
 
-   export GOPATH=$HOME/goprojects
-   export PATH=$PATH:$GOPATH/bin
-   export LESS=-RM
+export GOPATH=$HOME/goprojects
+export PATH=$PATH:$GOPATH/bin
+export LESS=-RM
 export TERM=xterm-256color
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"

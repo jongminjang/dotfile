@@ -11,30 +11,14 @@
                            go-mode
                            multiple-cursors
                            osx-clipboard
+                           nyan-mode
                            org))
 
 (dolist (package package-list)
   (unless (package-installed-p package)
     (package-install package)))
 
-(load-theme 'leuven)
-
-;; initial window
-;;(setq initial-frame-alist
-;;      '(
-;;        (width . 160) ; character
-;;        (height . 50) ; lines
-;;        ))
-
-;; default/sebsequent window
-;;(setq default-frame-alist
-;;      '(
-;;        (width . 100) ; character
-;;        (height . 52) ; lines
-;;        ))
-
-;;(require 'package)
-;;(package-initialize)
+;;(load-theme 'leuven)
 
 (when (memq window-system '(mac ns))
   (exec-path-from-shell-copy-env "GOPATH")
