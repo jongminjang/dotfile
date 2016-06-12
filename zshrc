@@ -86,8 +86,6 @@ alias ec='emacsclient -c'
 alias vim='emacsclient -t'
 alias vi='emacsclient -t'
 
-export GOPATH=$HOME/goprojects
-export PATH=$PATH:$GOPATH/bin
 export LESS=-RM
 export TERM=xterm-256color
 
