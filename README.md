@@ -11,5 +11,3 @@ https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm/master/honukai.zsh
 
 ##emacs theme
 cyberpunk
-
-some trash
