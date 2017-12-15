@@ -96,3 +96,6 @@ prompt_dir() {
 }
 
 #test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+export GOPATH=$HOME/goprojects
+export PATH=$HOME/.rbenv/shims:$HOME/.rbenv/bin:/usr/local/share/dotnet:/usr/local/go/bin:$PATH:$GOPATH/bin

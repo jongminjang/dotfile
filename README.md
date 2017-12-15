@@ -11,3 +11,14 @@ https://raw.githubusercontent.com/oskarkrawczyk/honukai-iterm/master/honukai.zsh
 
 ##emacs theme
 cyberpunk
+
+##etc/paths
+/usr/local/opt/coreutils/libexec/gnubin
+/usr/local/bin
+/usr/bin
+/bin
+/usr/sbin
+/sbin
+
+##etc/path.d
+
