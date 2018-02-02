@@ -60,7 +60,8 @@ export LANG=ko_KR.UTF-8
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-export EDITOR='emacs'
+export EDITOR='emacsclient'
+export ALTERNATE_EDITOR=''
 # else
 #   export EDITOR='mvim'
 # fi
